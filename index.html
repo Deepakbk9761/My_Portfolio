@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak BK | Portfolio</title>
+<link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+    <nav class="glass-nav">
+        <div class="logo">Deepak<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-text">
+            <h1>Deepak BK</h1>
+            <p>Python <span>Django</span> Developer & UI/UX Enthusiast</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Get in Touch</a>
+                <a href="#skills" class="btn-secondary">View Work</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+            <p>I am a 3rd-semester student at <strong>Tech AI College</strong>, blending technical logic with creative design. While my core focus is building robust backends with <strong>Python and Django</strong>, I also enjoy the visual precision of <strong>UI/UX design in Figma</strong> and high-quality video production.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="container gray-bg">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+    <div class="skill-box" onclick="showDetails('backend')">
+        <h3>Backend</h3>
+        <p>Python (Advanced), Django Framework, REST APIs</p>
+        <span class="click-hint">Click to see more</span>
+    </div>
+    <div class="skill-box" onclick="showDetails('frontend')">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript</p>
+        <span class="click-hint">Click to see more</span>
+    </div>
+    <div class="skill-box" onclick="showDetails('design')">
+        <h3>Design & Media</h3>
+        <p>UI/UX Design (Figma), Adobe Premiere Pro</p>
+        <span class="click-hint">Click to see more</span>
+    </div>
+</div>
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+    </div>
+</div>
+    </section>
+
+    <section id="experience" class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>Full-Stack Development</h4>
+                <p>Building data-driven web applications using Django, focusing on secure authentication and efficient database structures.</p>
+            </div>
+            <div class="timeline-item">
+                <h4>Content Creation & Design</h4>
+                <p>Professional video editing with Premiere Pro and prototyping user-centered interfaces in Figma.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container footer">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-card">
+            <p>Ready for your next project?</p>
+            <a href="mailto:dbk26608@gmail.com" class="email-link">dbk26608@gmail.com</a>
+            <br/>
+            <a href="Tel_no:9861722260" class="phone_no">9761722260</a>
+        </div>
+
+        <div class="containner">
+            <pre>
+                <p>"If you have any questions, please feel free to consult our teacher directly." </p> 
+            </pre>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

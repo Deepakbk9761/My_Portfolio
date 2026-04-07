@@ -1,0 +1,170 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b0f1a; /* Dark Navy Blue */
+    color: #f1f5f9;
+    line-height: 1.2;
+}
+
+/* Navigation Menu */
+.glass-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* ADD THIS LINE */
+    background: #1a1e2e;    /* Ensure background color is visible */
+    z-index: 1000;          /* Keep it above other elements */
+}
+
+.glass-nav {
+    background: rgba(26, 30, 46, 0.95); /* Solid dark blue with slight transparency */
+    backdrop-filter: blur(10px);        /* Adds a nice glass effect */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #6366f1; /* Purple highlight */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f1f5f9;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #6366f1;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, #1e1b4b, #0b0f1a);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p span {
+    color: #a855f7;
+    font-weight: bold;
+}
+
+.hero-btns {
+    margin-top: 25px;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #6366f1;
+    color: white;
+}
+
+.btn-secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+/* Containers */
+.container {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #6366f1;
+}
+
+.skills-grid {
+    display: flex;
+    flex-direction: row; /* Forces horizontal alignment */
+    flex-wrap: nowrap;   /* Prevents boxes from jumping to the next line */
+    justify-content: center;
+    gap: 20px;
+    width: 100%;         /* Ensures the grid uses the full container width */
+}
+
+.skill-box {
+    background: #1a1e2e;
+    padding: 30px;
+    border-radius: 10px;
+    /* Change fixed width to flex-basis so they can shrink to fit */
+    flex: 1;             
+    max-width: 320px;    /* Optional: prevents boxes from getting too wide */
+    text-align: center;
+    border: 1px solid #334155;
+}
+
+/* Experience / Timeline */
+.timeline-item {
+    border-left: 3px solid #6366f1;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+/* Contact Card */
+.contact-card {
+    background: #1a1e2e;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #334155;
+}
+
+.email-link, .phone_no {
+    color: #6366f1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.phone_no:hover, .email-link:hover {
+    text-decoration: underline;
+}
+
+
+
+.containner p {
+    color: #f1f5f9;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 1.5;
+}
